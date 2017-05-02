@@ -14,7 +14,7 @@
 \usepackage[titletoc]{appendix}
 %\usepackage{subfig} %para poner subfiguras
 %\usepackage{subcaption}
-\graphicspath{{Figures/}{Figures/Plots}} %En qué carpeta están las imágenes
+\graphicspath{{Figures/}} %En qué carpeta están las imágenes
 %\usepackage[nottoc]{tocbibind}
 \usepackage[pdftex,
             pdfauthor={Carlos Miguel Patiño},
@@ -188,13 +188,14 @@
 %  Incluye los capítulos en el folder de capítulos
 
 \include{Introduction/introduction}
-%\thispagestyle{empty}
 \include{Objectives/objectives}
+\include{Definitions/definitions}
 \include{NeutrinoMass/neutrinoMass}
-%\thispagestyle{empty}
+\include{NeutrinoSearches/neutrinoSearches}
+\include{Backgrounds/backgrounds}
 \include{ComputationalResources/computationalResources}
 \include{Simulation/simulation}
-\include{Definitions/definitions}
+\include{SelectionCriteria/selectionCriteria}
 \include{DistributionAnalysis/distributionAnalysis}
 
 
@@ -229,13 +230,16 @@
 %\bibliographystyle{plain}
 %\bibliography{bibliografía.bib} %Aquí ponen el nombre del archivo .bib
 
+%\bibliographystyle{unsrt}
+%\bibliography{references}
+
 
 \begin{thebibliography}{10}
 
-\bibitem {Detectores}Particle Data Group, Olive, K. A. et al. , Chin.Phys. C38, 090001 (2014)
+\bibitem {Detectores}Particle Data Group, Olive, K. A. et al. (2014) Chin.Phys. C38, 090001 
 
 
-\bibitem{Super-Kamiokande} Fukuda, S. et al. (2003) Nuclear Instruments and Methods in Physics Research A 501 (2003) 418–462
+\bibitem{Super-Kamiokande} Fukuda, S. et al. (2003) Nuclear Instruments and Methods in Physics Research A 501 (2003) pp. 418–462
 
 \bibitem{KamLAND} Decowski, M. (2016). KamLAND's precision neutrino oscillation measurements. Nuclear Physics B, 908, pp.52-61.
 
@@ -251,6 +255,17 @@
 
 \bibitem {VBF Search} Brooke, J., Buckley, M., Dunne, P., Penning, B., Tamanas, J., \& Zgubič, M. (2016). Vector boson fusion searches for dark matter at the LHC. Physical Review D, 93(11). http://dx.doi.org/10.1103/physrevd.93.113013
 
+\bibitem {Jets} Ryan Atkin.  Review of jet reconstruction algorithms. Journal of Physics: Conference Series, 645(1):012008, 2015
+
+
+\bibitem{NeutrinoMass} Kim, C., \& Pevsner, A. (1993). Neutrinos in Physics and Astrophysics (1st ed.). Langhorne, PA: Harwood Academic.
+
+\bibitem{NeutrinoMass2} Mohapatra, R., \& Pal, P. (1991). Massive neutrinos in physics and astrophysics (1st ed., pp. 31-32). Singapore: World Scientific.
+
+\bibitem{Tevatron} Almeida, F., Coutinho, Y., Simões, J., \& Vale, M. (2000). Signature for heavy Majorana neutrinos in hadronic collisions. Physical Review D, 62(7). http://dx.doi.org/10.1103/physrevd.62.075004
+
+\bibitem{HNDrell-Yan}Bray, S., Lee, J., \& Pilaftsis, A. (2007). Resonant CP violation due to heavy neutrinos at the LHC. Nuclear Physics B, 786(1-2), 95-118. http://dx.doi.org/10.1016/j.nuclphysb.2007.07.002
+
 \bibitem{MadGraph} Alwall, J., Herquet, M., Maltoni, F., Mattelaer, O., \& Stelzer, T. (2011). MadGraph 5: going beyond. Journal Of High Energy Physics, 2011(6). http://dx.doi.org/10.1007/jhep06(2011)128
 
 \bibitem{Pythia}Sjöstrand, T., Ask, S., Christiansen, J., Corke, R., Desai, N., \& Ilten, P. et al. (2015). An introduction to PYTHIA 8.2. Computer Physics Communications, 191, 159-177. http://dx.doi.org/10.1016/j.cpc.2015.01.024
@@ -258,10 +273,6 @@
 \bibitem{Delphes} de Favereau, J., Delaere, C., Demin, P., Giammanco, A., Lemaître, V., Mertens, A., \& Selvaggi, M. (2014). DELPHES 3: a modular framework for fast simulation of a generic collider experiment. Journal Of High Energy Physics, 2014(2). http://dx.doi.org/10.1007/jhep02(2014)057
 
 \bibitem{ROOT} Antcheva, I., Ballintijn, M., Bellenot, B., Biskup, M., Brun, R., \& Buncic, N. et al. (2009). ROOT — A C++ framework for petabyte data storage, statistical analysis and visualization.
-
-\bibitem{NeutrinoMass} Kim, C., \& Pevsner, A. (1993). Neutrinos in Physics and Astrophysics (1st ed.). Langhorne, PA: Harwood Academic.
-
-\bibitem{NeutrinoMass2} Mohapatra, R., \& Pal, P. (1991). Massive neutrinos in physics and astrophysics (1st ed., pp. 31-32). Singapore: World Scientific.
 
 \end{thebibliography}
 

@@ -1,8 +1,12 @@
 \chapter{Definitions} \label{sec:definitions}
 
+\section{Jet}
+
+\cite{Jets}
+
 \section{Variable Definitions}
 
-The transverse momentum or $p_{T}$, is defined as the momentum component that a particle has in the plane perpendicular to the beam line. In the coordinate system of the LHC, this plane corresponds to the $x-y$ plane.
+The transverse momentum or $p_{T}$, is defined as the momentum component that a particle has in the plane perpendicular to the beam line. In the coordinate system of the LHC, the transverse plane corresponds to the $x-y$ plane.
 
 The variable related with the polar angle in the LHC is called pseudorapidity, or $\eta$, defined as in Equation \ref{eq: eta}. The use of this variable is justified for mainly two reasons. The first one is that $\Delta \eta$, contrary to $\Delta \theta$, is a Lorentz invariant. This makes $\Delta \eta$ a more natural variable than $\Delta \theta$ for relativistic calculations. The second reason is that the distribution of the values of $\eta$ in the barrel region, where the multiplicity of particle is less than in the end-caps, is wider allowing the $\eta$ particle distribution to be aproximately constant.
 
@@ -11,11 +15,26 @@ The variable related with the polar angle in the LHC is called pseudorapidity, o
  \label{eq: eta}
 \end{equation}
 
-In each event, a maximum of six jets that had a $p_{T}$ greater than 15 GeV and its absolute value of $\eta$ less than 5.0 were stored to be analyzed later. Among this list of jets, the two jets whose summed masses resulted in the greatest mass combination were stored and defined as the Di-Jet Pair. The jet with greater momentum in the Di-Jet Pair is the leading jet and the other one in the pair is the sub-leading jet. These two jets are the ones related with the VBF process. Another variable defined regarding the Di-Jet Pair was the Di-Jet mass and corresponds to the sum of the masses from the jets in the Di-Jet Pair.  
+Sometimes it is necessary to determine the total angular separation between two particle in the detector, that is, determining the separation in both $\phi$ and $\eta$. That is why the variable $\Delta R$, shown in Equation \ref{eq: deltaR}, is defined. As stated earlier, it is generally used to determine how close in the detector two particle have been observed. Taking this into account, $\Delta R$ is useful to establish whether two particles may have overlapped detection points in the detector. 
 
-With the idea of exploiting the possible difference between signal and background in the $p_{T}$ for jets and $\tau$'s, two new variables shown in Equations \ref{eq: HT} and \ref{eq: ST} were defined to check for possible further separation between signal and background. As shown in equation \ref{eq: HT}, the $H_{T}$ variable is defined as the scalar sum of the jets with $p_{T}$ greater than 30 GeV and $|\eta| < 5$ that are not B-jets. $S_{T}$ is defined as the scalar sum of jets that fullfilll the same conditions of $H_{T}$, added to the $p_{T}$ of the $\tau$'s in the event.
+\begin{equation}\label{eq: deltaR}
+\Delta R = \sqrt{\left(\Delta \eta\right)^{2} + \left(\Delta \phi \right)^{2}}
+\end{equation}
 
-Since the $\tau$ selection is important for this analysis, it is relevant to provide a further description of the preselection criteria for the $\tau$'s in the simulated events. For starters, a jet identified as a tau is considered a valid $\tau$ if it has a transverse momentum greater than 20 GeV. Also, it was required that a valid $\tau$ should not overlap with an electron or a muon. That is, the $\Delta R$, defined as $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$, should not be less than 0.3. This condition guarantees that the jet identified as a $\tau$ does not overlap with other leptons. Since the final state for this analysis includes two $\tau$'s, the two taus with greater $p_{T}$ are selected among a maximum of three taus stored for each event. The leading $\tau$ is the one with highest $p_{T}$ and the sub-leading $\tau$ is the one with second highest $p_{T}$.
+Another useful variable defined in particle physics is the tranverse missing energy or $\slashed{E}_{T}$. Given that the protons in the LHC collide head to head in the $z$ axis, the initial momentum in the $x$ and $y$ components is zero. Since momentum in all directions must be conserved during the collision, the momentum after the collision must also be zero. However, there are particle resulting from the proton-proton collision that cannot be observed by the components in the detector. That is why the energy corresponding to these unobserved particles is going to be missing from the energy observed in the detector. Considering what has been said in this paragraph, the momentum equation in the $x-y$ plane must be
+
+$$ \sum_{i=1}^{m} p_{T}(i)^{observed} + \sum_{j=1}^{n} p_{T}(i)^{missing} = 0 $$
+
+Taking the last equation into account, it is natural to define the missing transverse energy as in Equation \ref{eq: MET}, i.e. the negative of the sum of transverse momenta of the observed particles in the detector.
+
+\begin{equation}\label{eq: MET}
+\slashed{E}_{T} = -\sum_{i=1}^{m} p_{T}(i)^{observed}
+\end{equation}  
+
+
+
+With the idea of exploiting the possible difference between signal and background in the $p_{T}$ for jets and $\tau$'s, two new variables shown in Equations \ref{eq: HT} and \ref{eq: ST} were defined to check for possible further separation between signal and background. As shown in equation \ref{eq: HT}, the $H_{T}$ variable is defined as the scalar sum of the jets in the event that are not B-jets. $S_{T}$ is defined as the scalar sum of jets that fullfilll the same conditions of $H_{T}$, added to the $p_{T}$ of the $\tau$'s in the event.
+
 
 \begin{equation}
  H_{T} = \sum_{i=1}^{n} p_{T}(jet_{i})
@@ -29,16 +48,10 @@ Since the $\tau$ selection is important for this analysis, it is relevant to pro
 
 
 
-\section{Cut Definitions} \label{sec: cutdefinitions}
 
-In order to achieve a separation between background and signal, several successive requirements for the variables of the particles in the event were made. These requirements are defined as cuts, and for each cut the events that do not comply with the established condition are not taken into account to fill the histograms. Eight cuts were made to the histograms, storing in each cut the resulting distributions to analyze them later. The first four cuts were related with jets and $\tau$'s in the event, and the subsequent four were related with the VBF topology. In the next paragraphs of this section a description of each one of the cuts is given as well as the order in which they were performed.
 
-The first cuts that were made to the histograms were to require that the leading and sub-leading $\tau$'s should have a minimum transverse momentum of 20 GeV and a maximum of 2.1 for the absolute value of $\eta$. The latter guarantees that the $\tau$'s left are detected by the barrel and not the end-caps of the detector. That is an important condition because the detection components, such as the tracker, are in the barrel section and are more accurate than the ones in the end-caps. As a result, a signal detected in the barrel is most certain to be accurate than one detected in an end-cap.  
 
-The next cut requires that the event does not have any B-jet. This cut is justified by the fact that one of the main backgrounds for the signal is the top anti-top ($t\bar{t}$) process. The interaction bewteen the top and anti-top quark is related with the production of jets associated with the $b$ quark or B-jets. That is why, much of the $t\bar{t}$ should be eliminated by requiring no B-jets in the event. This fact will be later analized further in chapter \ref{sec: disanalysis}. The cut that follows the one regarding the B-jets selects the events that have a minimum of two jets with transverse momentum greater than 30 GeV. This two jets must be different from the ones used in the Di-Jet Pair and are the ones that should result from the fragmentation of the quarks resulting of the W decay shown in Figure \ref{fig: W}.
-
-The last three cuts made to the histograms are related to the VBF topology. The first of the three selects events in which the product of $\eta$ from the leading and sub-leading jets is negative. This condition guarantees that the jets in the Di-Jet Pair are in opposite hemispheres. The next cut requires that the leading and sub-leading jets of the event have a $\Delta \eta$ greater than 3.8. Finally, the last cut requires that the Di-Jet mass of the event is greater than 500 GeV.
-
+ 
 
 
 
