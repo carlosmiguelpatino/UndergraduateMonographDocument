@@ -6,10 +6,22 @@ The Standard Model predicts that the neutrino is a massless particle. However, e
 
 The baryon number was first suggested by Ernst Stueckelberg in 1938 to explain why the proton does not decay into a positron and a gamma ray \cite{b-l symmetry}. Stueckelberg assigned a baryon number of $B = 1$ to the proton and the neutron and $B = -1$ to the proton and antineutron. Leptons, photons, and mesons are assigned $B = 0$. The definition of the baryon number was later generalized to be as the one shown in Equation \ref{eq: baryonNumber}, where $n_{q}$ is the number of quarks and $n_{\bar{q}}$ is the number of antiquarks.
 
+
 \begin{equation}\label{eq: baryonNumber}
 B = \frac{1}{3}\left(n_{q} - n_{\bar{q}}\right)
 \end{equation}
 
+The baryon number conservation states that the baryon number in a process must be conserved. That is $\sum B = \text{const}$. This conservation law can arise more formally from the global gauge transformation shown in Equation \ref{eq: Btransformation} \cite{b-l symmetry}.
+
+\begin{equation}\label{eq: Btransformation}
+\psi^{\prime} = \psi e^{\iu \epsilon B} 
+\end{equation}
+
+In 1953, E. J. Konopinski and H.M. Mahmoud introduced the lepton number $L$. They assigned $L = 1$ to $e^{-}$, $\mu^{-}$, $\nu_{e}$ and $\nu_{\mu}$, $L = -1$ to the antileptons, and $L = 0$ to all the other particles. This lepton number was later generalized to the $\tau$ and the $\nu_{\tau}$. The lepton number conservation, as the baryon number conservation, can also arise from a global gauge transformation like the one shown in Equation \ref{eq: Ltransformation} \cite{b-l symmetry}.
+
+\begin{equation}\label{eq: Ltransformation}
+\psi^{\prime} = \psi e^{\iu \epsilon L} 
+\end{equation}
 
 \section{The Dirac Mass}
 
@@ -21,12 +33,24 @@ A standar Dirac free fermion can be described using the Langrangian shown is Equ
 
 If the field $\psi$ is decomposed into the corresponding left and right chiral states, the Dirac mass term can be written as 
 
-$$m(\overline{\psi_{L} + \psi_{R}})(\psi_{L} + \psi_{R})$$
+$$-m(\overline{\psi_{L} + \psi_{R}})(\psi_{L} + \psi_{R})$$
 
 As shown in Appendix \ref{app: samechirality}, the terms $\bar{\psi_{R}}\psi_{R}$ and $\overline{\psi}_{L}\psi_{L}$ are zero. Therefore, the Dirac mass term can be written as shown in Equation \ref{eq: massterm}. 
 
 \begin{equation} \label{eq: massterm}
-m \left(\overline{\psi}_{L}\psi_{R} + \overline{\psi}_{R}\psi_{L}\right)
+-m \left(\overline{\psi}_{L}\psi_{R} + \overline{\psi}_{R}\psi_{L}\right)
+\end{equation}
+
+For the particular case of the neutrinos, and taking into account the three neutrino flavors or generations, $\psi_{L}$ and $\psi_{R}$ would correspond to the $\nu_{L}$ and $\nu_{R}$ shown in Equation \ref{eq: diracFieldFlavors} \cite{NeutrinoMass}.
+
+\begin{equation}\label{eq: diracFieldFlavors}
+\nu_{L} = \begin{pmatrix} \nu_{e}\\ \nu_{\mu} \\ \nu_{\tau} \end{pmatrix}_{L} , \quad \nu_{R} = \begin{pmatrix} \nu_{e}\\ \nu_{\mu} \\ \nu_{\tau} \end{pmatrix}_{R}
+\end{equation}
+
+In the generalization for the three neutrino generations, the Dirac mass Lagrangian, or Dirac mass term, is like the one shown in Equation \ref{eq: diracLagrFlavors}. The matrix $\mathcal{M}_{D}$ is in general a $3 \times 3$ complex mass matrix \cite{NeutrinoMass}.
+
+\begin{equation}\label{eq: diracLagrFlavors}
+\Lagr_{mass}^{D} = -\left(\overline{\nu}_{R}\mathcal{M}_{D}\nu_{L} + \overline{\nu}_{L}\mathcal{M}_{D}\nu_{R}\right)
 \end{equation}
 
 
@@ -47,11 +71,11 @@ As in the case of a Dirac fermion, a Lagrangian like the shown in Equation \ref{
 Once a neutrino that is its own anti-particle is defined, additional terms of the form $\overline{\nu^{C}}\nu^{C}$, $\overline{\nu^{C}}\nu$, and $\overline{\nu}\nu^{C}$ can be added to the mass term shown in Equation \ref{eq: massterm} \cite{NeutrinoMass}. The addition of these terms does not violate charge conservation, because neutrinos are neutral particles. Hence, the Lorentz invariance in the Lagrangian is being conserved. The term $\overline{\nu^{C}}\nu^{C}$ is identical to $\overline{\nu}\nu$ except for an irrelevant surface term, so it would not be necessary to include it in the mass term in Equation \ref{eq: massterm} \cite{NeutrinoMass}. However, the other two terms mentioned above are not included in this mass term, so they should be added to the general mass lagrangian. These two new mass terms, taking into account an hypothetical neutrino with right helicity, would be like the ones shown in Equations \ref{eq: majoranaMassL} and \ref{eq: majoranaMassR}.
 
 \begin{equation}\label{eq: majoranaMassL}
-\Lagr \sim m_{L}\left(\overline{\nu^{C}}_{L}\nu_{L}  + \overline{\nu}_{L}\nu^{C}_{L}\right)
+\Lagr \sim m_{L}\left(\overline{\nu^{C}_{L}}\nu_{L}  + \overline{\nu}_{L}\nu^{C}_{L}\right)
 \end{equation}
 
 \begin{equation}\label{eq: majoranaMassR}
-\Lagr \sim m_{R}\left(\overline{\nu^{C}}_{R}\nu_{R}  + \overline{\nu}_{R}\nu^{C}_{R}\right) 
+\Lagr \sim m_{R}\left(\overline{\nu^{C}_{R}}\nu_{R}  + \overline{\nu}_{R}\nu^{C}_{R}\right) 
 \end{equation}
 
 If a Majorana neutrino is constructed as $\nu_{M} \equiv \nu_{L} + \nu_{L}^{C}$, Equation \ref{eq: majoranaMassL} can be written like in Equation \ref{eq: majoranaMass}. A similar definition can be made with an hypothetical neutrino with right helicity, so Equation \ref{eq: majoranaMassR} can also be written as \ref{eq: majoranaMass}. As in the Dirac case, Equation \ref{eq: majoranaMass} is defined as the Majorana mass term. However, contrary to the Dirac mass term, the Majorana mass term can be constructed using either only $\nu_{L}$ or $\nu_{R}$ \cite{NeutrinoMass}. 
@@ -61,20 +85,28 @@ If a Majorana neutrino is constructed as $\nu_{M} \equiv \nu_{L} + \nu_{L}^{C}$,
 \end{equation}
 
 
+The Lagrangians shown in Equations \ref{eq: majoranaMassL} and \ref{eq: majoranaMassR} are valid for only one neutrino flavor. If the mass Lagrangian is generalized to the three neutrino generations as in the Dirac case, the Majorana mass Lagrangian would be the one shown in Equation \ref{eq: majoranaLagrFlavors}. In this equation, h.c. stands for the hermitian conjugate of the other term in the Lagrangian and $\nu_{L}$ is the same as the one defined in Equation \ref{eq: diracFieldFlavors}. As in the Dirac case, $\mathcal{M}_{M}$ is, in general, a complex $3 \times 3$ matrix with the additional property that this matrix is always symmetric, i.e. $\mathcal{M}_{M} = \mathcal{M}_{M}^{\intercal}$ \cite{NeutrinoMass}. 
+
+\begin{equation}\label{eq: majoranaLagrFlavors}
+\Lagr_{mass}^{M} = -\frac{1}{2}\overline{\nu_{L}^{C}}\mathcal{M}_{M}\nu_{L} + \text{h.c}
+\end{equation}
+
+
 \section{Neutrino Mass in the Standard Model}
 
 As mentioned in Chapter \ref{chap: Introduction}, the Standard Model only includes a neutrino with left chirality. As shown in Equation \ref{eq: massterm}, the abscence of a neutrino with right chirality makes that all the terms in the Dirac mass Lagrangian vanish. Therefore, it is not possible to add mass to the neutrinos in the Standard Model using a Dirac mass term.
 
 Another mechanism that could provide mass to the neutrino in the Standard Model is the Majorana mass term. However this term would not conserve the Lepton number, i.e. would violate the L symmetry, that is conserved throughout the Standard Model\cite{NeutrinoMass2}. This happens because the Majorana fermions, in this case neutrinos, are their own antiparticles. A lepton number of $L = +1$ is assigned to a fermion and $L = -1$ to its antiparticle. Since the Majorana neutrinos are their own antiparticles, they do not have a well defined lepton number (it could be either +1 or -1). That is why the lepton number for both Majorana neutrinos would be either $L = 1$ or $L = -1$, so the Majorana mass term would violate de lepton conservation number by $\Delta L = \pm 2$. Also, some non-pertubative effects in the Standard Model can violate L symmetry but conserve the current $B - L$, where $B$ is the baryon number. To summarize, since the Majorana terms violate both $B-L$ and $L$ symmetries, these terms can not be used to introduced mass in the Standard Model using perturbation theory or non-perturbative effects \cite{NeutrinoMass2}.  
 
-Since these two mechanisms are not useful to explain the origin of the neutrino mass inside the Standard Model, a minimal extension to the SE is proposed in order to provide the neutrinos with mass. This extension consists in inserting right handed neutrinos to the model to explain the origin of the neutrino mass. This extension and its consequences is described in the next section.
+Since these two mechanisms are not useful to explain the origin of the neutrino mass inside the Standard Model, a minimal extension to the SE is proposed in order to provide the neutrinos with mass. This extension consists in inserting right handed neutrinos to the model to explain the origin of the neutrino mass. In principle, the addition of this right handed neutrino would make the Dirac mass term different from zero, and the neutrino mass would be of the form of the charged leptons. Since the the mass terms of the leptons is of the form $m = Yv/\sqrt{2}$, where $Y$ is the Yukawa coupling constant, this constant is required to be $Y \simeq 10^{-11}$ or less to explain the small mass of the neutrino. Since the introduction of such a small coupling would require a symmetry reason for the small value, only introducing the right handed neutrino would not solve entirely the neutrino mass problem \cite{YukawaCoupling}. That is why an introduction of a model that explains both the neutrino mass and its small value must be introduced.
 
-\section{The See Saw Mechanism} 
+\section{The See Saw Mechanism}
+ 
 
 The See-Saw mechanism assumes the existance of a neutrino with right helicity. With the existence of this neutrino with right helicity and combining the Dirac and Majorana neutrinos mass terms discussed in the previous sections, the resulting mass Lagrangian would be the shown shown in Equation \ref{eq: seeSawMass}, where $m_{D}$ is a Dirac mass, $m_{L}$ and $m_{R}$ are Majorana masses, and h.c is the hermitian conjugate.
 
 \begin{equation}\label{eq: seeSawMass}
-\Lagr_{mass} = -m_{D}\left(\overline{\nu}_{L}\nu_{R} + \overline{\nu}_{R}\nu_{L}\right) - \frac{1}{2}\left(m_{L}\overline{\nu^{C}}_{L}\nu_{L} + m_{R}\overline{\nu^{C}}_{R}\nu_{R}\right) + h.c
+\Lagr_{mass} = -m_{D}\overline{\nu}_{L}\nu_{R} - \frac{1}{2}\left(m_{L}\overline{\nu^{C}}_{L}\nu_{L} + m_{R}\overline{\nu^{C}}_{R}\nu_{R}\right) + \text{h.c}
 \end{equation}
 
 If the vector $\nu$ is defined as
@@ -90,6 +122,77 @@ then the Lagrangian in Equation \ref{eq: seeSawMass}, can be written as in Equat
 \begin{equation}\label{eq: massMatrix}
 \mathcal{M} = \begin{pmatrix} m_{L}&m_{D}\\m_{D}&m_{R} \end{pmatrix}
 \end{equation}
+
+If matrix $\mathcal{M}$ is diagonalized, the two left handed neutrino mass eigenstate Majorana neutrinos, $\nu_{1}$ and $\nu_{2}$, can be expressed as in Equation \ref{eq: eigenstates} where $\theta$ is the mixing angle. A more detailed calculation of the mass eigenstate Majorana neutrinos, can be found in Appendix \ref{chapter: massEigenstates}.
+
+\begin{equation*}
+\begin{split}
+\nu_{L} = \nu_{1} \cos \theta + \nu_{2} \sin \theta \\
+\nu_{R}^{C} = -\nu_{1} \sin \theta + \nu_{2} \cos \theta
+\end{split}
+\end{equation*}
+
+
+or
+
+\begin{equation} \label{eq: eigenstates}
+\begin{split}										
+\nu_{1} = \nu_{L} \cos \theta - \nu_{R}^{C} \sin \theta \\
+\nu_{2} = \nu_{L} \sin \theta + \nu_{R}^{C} \cos \theta											
+\end{split}
+\end{equation}
+
+To guarantee that the mass eigenvalues are positive, and insertion of $i$, the imaginary number, in the equation for $\nu_{1}$ in Equation \ref{eq: eigenstates} is necessary. With this insertion, $\nu_{1}$ would now be defined as
+
+$$ \nu_{1} = \iu \nu_{L} \cos \theta - \iu \nu_{R}^{C} \sin \theta $$
+
+Using the calculations performed in Appendix \ref{chapter: massEigenstates}, the mixing angle value would be the one shown in Equation \ref{eq: mixingAngle}, and the two mass eigenvalues would be the ones shown in Equation \ref{eq: eigenvalues} \cite{NeutrinoMass}.
+
+\begin{equation}\label{eq: mixingAngle}
+\tan 2\theta = \frac{2m_{D}}{m_{R}-m_{L}}
+\end{equation}
+
+\begin{equation}\label{eq: eigenvalues}
+\begin{split}
+m_{1} = \frac{1}{2}\sqrt{4m_{D}^{2} + \left(m_{R} - m_{L}\right)^{2}} - \frac{m_{R} + m_{L}}{2} \\
+m_{2} = \frac{1}{2}\sqrt{4m_{D}^{2} + \left(m_{R} - m_{L}\right)^{2}} + \frac{m_{R} + m_{L}}{2}
+\end{split}
+\end{equation}
+
+The values of $m_{D}$, $m_{R}$, and $m_{L}$ for the See Saw mechanism are values in which $m_{R}$ is much larger than $m_{D}$ and $m_{L}$. That is, $m_{R} \gg m_{D}, m_{L}$. Furthermore, the value of $m_{L}$ is chosen to be zero. The latter with the objective of leaving the standard weak interaction theory unchanged, since $m_{L} \neq 0$ would imply the addition of a left Majorana neutrino. Setting $m_{L} = 0$ and making the approximation $m_{R} \gg m_{D}$ in Equation \ref{eq: eigenvalues}, the values for $m_{1}$ and $m_{2}$ are the ones shown in Equation \ref{eq: massValues}. On one hand, it can be seen from Equation \ref{eq: massValues} that if $m_{R}$ has a large value, $m_{2}$ would also have a large value. On the other hand, if $m_{R}$ has a large value, $m_{1}$ has a small value. Because of this inverse proportionality between $m_{1}$ and $m_{2}$ this mechanism is called the See Saw mechanism. Also, and more important, since these eigenvalues are the ones that are actually observed in measurements, the See Saw mechanism would successfully explain the origin of the neutrino mass as well as the small values for the neutrino mass observed in experiments. In this mechanism, $m_{D}$ is the mass scale associated with the Standard Model, whereas $m_{R}$ is the scale provided by models beyond the SM \cite{NeutrinoMass}. It is also noteworthy that for the values of $m_{R}$ and $m_{D}$ considered, the mixing angle approaches to zero. This fact indicates that the eigenstates $\nu_{1}$ and $\nu_{2}$ would be completely decoupled.
+
+\begin{equation}\label{eq: massValues}
+m_{1} \simeq \frac{m_{D}^{2}}{m_{R}}, \quad m_{2} \simeq m_{R}
+\end{equation}
+
+To end the analysis of the See Saw mechanism, it is worth mentioning that the analysis followed in this section was for only one neutrino flavor. Firstly, Equation \ref{eq: massValues} would turn into the expression in Equation \ref{eq: massValuesFlavors}, where each of the elements is a $3 \times 3$ matrix. Also, the matrix in Equation \ref{eq: massMatrix}, in the case of three neutrino generations would be the one shown in Equation \ref{eq: massMatrixFlavors} where each of the elements in the matrix is a $3 \times 3$ matrix \cite{NeutrinoMass}. 
+
+
+\begin{equation}\label{eq: massValuesFlavors}
+m_{1} = m_{D}\frac{1}{m_{R}}m_{D}^{\intercal}
+\end{equation}
+
+\begin{equation}\label{eq: massMatrixFlavors}
+\mathcal{M}_{6}(6\times 6) = \begin{pmatrix} 0&m_{D}\\m_{D}^{\intercal}&\mathcal{M_{\text{3}}} \end{pmatrix}
+\end{equation}
+
+If the matrix in \ref{eq: massMatrixFlavors} is diagonalized by blocks and if the mixings between flavors are neglected, a term for the neutrino masses in each generation like the one in Equation \ref{eq: quadraticSeeSaw} would be obtained with $m_{f,i} = (m_{e}, m_{\mu}, m_{\tau})$. In the process of obtaining Equation \ref{eq: quadraticSeeSaw}, $\mathcal{M_{\text{3}}}$ is assumed to be of the form shown in Equation \ref{eq: quadraticM}. 
+
+\begin{equation}\label{eq: quadraticSeeSaw}
+m(\nu_{i}) \simeq \frac{m_{f,i}^2}{M_{R}}
+\end{equation}
+
+\begin{equation}\label{eq: quadraticM}
+\mathcal{M_{\text{3}}} \simeq M_{R} \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+\end{equation}
+
+However it is also possible that the eigenvalues of are not all $M_{R}$ as in Equation \ref{eq: quadraticSeeSaw}, but $M_{1}$, $M_{2}$, and $M_{3}$. This difference in the eigenvalues would lead to a similar hierarchy to the one observed in the charged lepton masses \cite{NeutrinoMass}. 
+
+As a final note, due to the inclusion of Majorana mass terms in the mechanism and as stated earlier in this chapter, a breaking of the $L$ symmetry is induced in the See Saw mechanism. Nevertheless, this does not rises a problem for the validity of the See Saw mechanism since the energy scales of the heavy neutrino, scales at which the $L$ symmetry would break, would be very large. These large scales have not been yet reached by the particle physics experiments, so that would explain the lack of experimental evidence of the breaking of the $L$ symmetry.
+
+
+
+
 
 
 
