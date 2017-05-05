@@ -2,7 +2,7 @@
 
 The eigenvalues of the matrix in Equation \ref{eq: massMatrix} can be obtained by using the standard method for calculating eigenvalues. That is, the eigenvalues if $\mathcal{M}$, are $\lambda$ values that statisfy
 
-$$\det \left(\mathcal{M} - \lambda\right) = 0$$
+$$\det \left(\mathcal{M} - \mathbb{1}\lambda\right) = 0$$
 
 After some algebra, this determinant is equal to 
 
@@ -36,19 +36,6 @@ $$m_{D} = \begin{pmatrix} m_{1}\eta_{1} & 0 \\ 0 & m_{2}\eta_{2} \end{pmatrix}$$
 where $\eta_{1} = -1$, $\eta_{2} = 1$, and $m_{i}^{\prime} = m_{i}\eta_{i}$. That way it is assured that the values of the $m_{1}$ and $m_{2}$ are positive. This result can also be achieved by multiplying the first column of $\mathcal{O}$ by $\iu$. The latter is the procedure followed in Chapter \ref{chapter: neutrinoMass} to make the mass values positive.
 
 
-Since $\mathcal{O}$ is the matrix that diagonalizes $\mathcal{M}$, then the field $\nu_{L}$ is related to $N_{L}$ by the expression shown Equation \ref{eq: orthogonalTransformation} where $N_{L}$ is the vector with definite mass fields, i.e. the fields with mass $m_{1}$ and $m_{2}$ defined as in Equation \ref{eq: nl}.
-
-\begin{equation}\label{eq: orthogonalTransformation}
- \nu_{L} = \mathcal{O}N_{L}
-\end{equation}
-
-
-\begin{equation}\label{eq: nl}
- N_{L} = \begin{pmatrix} \nu_{1} \\ \nu_{2} \end{pmatrix}
-\end{equation}
-
-
-With the definitions presented in Equations \ref{eq: orthogonalTransformation} and \ref{eq: nl}, the equations shown in \ref{eq: eigenstates} become clear.
-
+Since $\mathcal{O}$ is the matrix 
 
  
