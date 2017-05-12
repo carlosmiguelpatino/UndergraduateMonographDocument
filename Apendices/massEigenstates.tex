@@ -1,6 +1,6 @@
 \chapter{Mass Eigenstate Majorana Neutrinos Calculation}\label{chapter: massEigenstates}
 
-The eigenvalues of the matrix in Equation \ref{eq: massMatrix} can be obtained by using the standard method for calculating eigenvalues. That is, the eigenvalues if $\mathcal{M}$, are $\lambda$ values that statisfy
+The eigenvalues of the matrix in Equation \ref{eq: massMatrix} can be obtained by using the standard method for calculating eigenvalues. That is, the eigenvalues if $\mathcal{M}$ are $\lambda$ values that statisfy
 
 $$\det \left(\mathcal{M} - \lambda\right) = 0$$
 
@@ -14,22 +14,19 @@ Using the quadratic equation to solve for $\lambda$ values, the result is like t
  \lambda = \frac{m_{R} + m_{L}}{2} \pm \frac{\sqrt{4m_{D} + \left(m_{R} - m_{L}\right)^{2}}}{2}
 \end{equation}
 
-Since $\mathcal{M}$ is real and symmetric, a real orthogonal matrix $\mathcal{O}$ that diagonalizes $\mathcal{M}$ exists. In other words, there must by an $\mathcal{O}$ such that the expression in Equation \ref{eq: diagonalization}
-
-\begin{equation}\label{eq: diagonalization}
-\mathcal{O}^{\intercal}\mathcal{MO} = m_{D} 
-\end{equation}
-
-
-where 
+Since $\mathcal{M}$ is real and symmetric, a real orthogonal matrix $\mathcal{O}$ that diagonalizes $\mathcal{M}$ exists. In other words, there must by an $\mathcal{O}$ such that the expression in Equation \ref{eq: diagonalization} holds where 
 
 $$m_{D} = \begin{pmatrix} m_{1}^{\prime} & 0 \\ 0 & m_{2}^{\prime} \end{pmatrix}$$
 
 and 
 
 $$ \mathcal{O} = \begin{pmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{pmatrix}$$
+
+\begin{equation}\label{eq: diagonalization}
+\mathcal{O}^{\intercal}\mathcal{MO} = m_{D} 
+\end{equation}
            
-Before continuing with the derivation, it is worth noting that the value for $m_{1}^{\prime}$ as defined earlier can take negative values. Since the physical masses have to be positive a new matrix
+Before continuing with the derivation, it is worth noting that the value for $m_{1}^{\prime}$ as defined earlier can take negative values. Since the physical masses have to be positive, a new matrix $m_{D}$ is defined
 
 $$m_{D} = \begin{pmatrix} m_{1}\eta_{1} & 0 \\ 0 & m_{2}\eta_{2} \end{pmatrix}$$
 
