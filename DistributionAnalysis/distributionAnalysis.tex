@@ -85,7 +85,7 @@ Another variable relevant for the analysis was found out to be $m(jj)$. The reas
 \end{figure}
 
 
-\section{Stack Plots}
+\section{Stack Plots}\label{section: stackPlots}
 
 The plots shown in this section are the ones corresponding with the relevant variables mentioned in section \ref{sec: Normalized Distributions}. All the plots presented are normalized to the cross section of each process and to a luminosity of 50 $\text{fb}^{-1}$. 
 
@@ -93,18 +93,22 @@ In Figures \ref{fig: HT2tausMet50} and \ref{fig: HT2tausMet60}, the stack plots 
 
 
 As expected from the analysis performed in Section \ref{sec: Normalized Distributions}, the variables $H_{T}$ and $S_{T}$ show separation between signal and backgrounds. The latter can be observed in Figures \ref{fig: HT2tausMet50} and \ref{fig: HT2tausMet60} for $H_{T}$, and Figures \ref{fig: ST2tausMet50} and \ref{fig: ST2tausMet60} for $S_{T}$. However, from these four plots it can also be concluded that $S_{T}$ is a better variable than $H_{T}$ for this study. This conclusion can be drawn from the fact that the signal distribution decays slower in the $S_{T}$ variable than in $H_{T}$. These four plots required two taus in the event. The leading tau had a requirement of minimum transverse momentum of 50 GeV and the subleading tau a minimum $p_{T}$ of 20 GeV.
+
+Although both $H_{T}$ and $S_{T}$ allow to obtain a separation between signal and backgrounds, the Di-Jet mass, or $m(jj)$, has a distribution that would allow to distinguish better signal and backgrounds. This fact is shown in Figures \ref{fig: mjj2tausMet50} and \ref{fig: mjj2tauMet60}, where the signal decays slower than in the cases of $H_{T}$ and $S_{T}$ for values where the backgrounds are not longer present. This flatter distribution compared to $H_{T}$ and $S_{T}$ allows to have a greater number of events outside the regions where the backgrounds are present for the Di-Jet mass variable. It has to be mentioned that these two plots are also for the case where two taus, with the conditions mentioned in the previous paragraph, were required in the event. 
+
+A variable that in the normalized plot analysis did not show separation between the signal and the background was the transverse mass between the tau and the missing transverse energy. However, looking for other potentially useful varibles for the analysis, the stack plot $m_{T}(\tau, \slashed{E}_{T})$ showed good separation between signal and backgrounds. This stack plot is presented in Figure \ref{fig: mT2tausMet60}. 
  
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/HT_2taus_met50_50ifb.pdf}
 \caption{Stack plot of $H_{T}$ requiring two taus in the event and with $\slashed{E}_{T} > 50$}
 \label{fig: HT2tausMet50}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{StackPlots/HT_2taus_met60_50ifb.pdf}
+\includegraphics[width=\linewidth]{StackPlots/HT_2Taus_met60_50ifb_2moreSignals.pdf}
 \caption{Stack plot of $H_{T}$ requiring two taus in the event and with $\slashed{E}_{T} > 60$}
 \label{fig: HT2tausMet60}
 \end{figure}
@@ -112,7 +116,7 @@ As expected from the analysis performed in Section \ref{sec: Normalized Distribu
 
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/ST_2taus_met50_50ifb.pdf}
 \caption{Stack plot of $S_{T}$ requiring two taus in the event and with $\slashed{E}_{T} > 50$}
@@ -120,42 +124,51 @@ As expected from the analysis performed in Section \ref{sec: Normalized Distribu
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{StackPlots/ST_2taus_met60_50ifb.pdf}
+\includegraphics[width=\linewidth]{StackPlots/ST_2Taus_met60_50ifb_2moreSignals.pdf}
 \caption{Stack plot of $S_{T}$ requiring two taus in the event and with $\slashed{E}_{T} > 60$}
 \label{fig: ST2tausMet60}
 \end{figure}
 
-Although both $H_{T}$ and $S_{T}$ allow to obtain a separation between signal and backgrounds, the Di-Jet mass, or $m(jj)$, has a distribution that would allow to distinguish better signal and backgrounds. This fact is shown in Figures \ref{fig: mjj2tausMet50} and \ref{fig: mjj2tauMet60}, where the signal decays slower than in the cases of $H_{T}$ and $S_{T}$ for values where the backgrounds are not longer present. This flatter distribution compared to $H_{T}$ and $S_{T}$ allows to have a greater number of events outside the regions where the backgrounds are present for the Di-Jet mass variable. It has to be mentioned that these two plots are also for the case where two taus, with the conditions mentioned in the previous paragraph, were required in the event. 
 
-\begin{figure}
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/mjj_2taus_met50_50ifb.pdf}
 \caption{Stack plot of Di-Jet mass requiring two taus in the event and with $\slashed{E}_{T} > 50$}
 \label{fig: mjj2tausMet50}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{StackPlots/mjj_2taus_met60_50ifb.pdf}
+\includegraphics[width=\linewidth]{StackPlots/mjj_2Taus_met60_50ifb_2moreSignals.pdf}
 \caption{Stack plot of Di-Jet mass requiring two taus in the event and with $\slashed{E}_{T} > 60$}
 \label{fig: mjj2tauMet60}
 \end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{StackPlots/mT_2Tau_met60_50ifb_2moreSignals.pdf}
+\caption{Stack plot $m_{T}$ between the $\tau$ and the $\slashed{E}_{T}$ requiring two taus in the event and with $\slashed{E}_{T} > 60$}
+\label{fig: mT2tausMet60}
+\end{figure}
+
+
 
 Besides the case requiring two taus in the event with the selection criteria mentioned previously, the case requiring only one tau with a minimum transverse momentum of 50 GeV was studied. The plots for this case are shown in Figures \ref{fig: MET1tauMet60}, \ref{fig: mjj1tauMet60}, and \ref{fig: mT1tauMet60}. These three plots already include the increase in the $\slashed{E}_{T}$ cut discussed at the beginning of this section. In these plots it can be seen that the total amount of background for this case is increased in almost three orders of magnitude. In particular, the W+jets process has significantly more events in the case for one tau after applying all the cuts. However, the dominant background process for both the two taus and one tau cases is the Drell-Yan process. 
 
 The main difference between the one tau and two tau case in the relevance of the Di-Jet mass variable. As mentioned earlier, the amount of background increases significantly for the case where only one tau in the event is required. This amount in the background affects the separation between signal and backgrounds in $m(jj)$ observed in the case where two taus were required. This fact can be seen in the Di-Jet mass distribution presented in \ref{fig: mjj1tauMet60}. This is why the distribution of the transverse mass between the tau and the missing transverse energy was explored. Figure \ref{fig: mT1tauMet60} shows the distribution of $m_{T}$ for the case of requiring only one tau. It can be observed that, although a separation as good as the one obtained in $m(jj)$ for the two taus case, the $m_{T}$ distribution has a greater separation between signal and backgrounds than the one in $m(jj)$ in Figure \ref{fig: mjj1tauMet60}.
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/MET_1Tau_met60_50ifb.pdf}
 \caption{Stack plot of $\slashed{E}_{T}$ requiring one tau in the event and with $\slashed{E}_{T} > 60$}
 \label{fig: MET1tauMet60}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/mjj_1Tau_met60_50ifb.pdf}
 \caption{Stack plot of Di-Jet mass requiring only one tau in the event and with $\slashed{E}_{T} > 60$}
@@ -165,10 +178,10 @@ The main difference between the one tau and two tau case in the relevance of the
 
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{StackPlots/mT_1Tau_met60_50ifb.pdf}
-\caption{Stack plot $m_{T}$ requiring only one tau in the event and with $\slashed{E}_{T} > 60$}
+\caption{Stack plot $m_{T}$ between the $\tau$ and the $\slashed{E}_{T}$ requiring only one tau in the event and with $\slashed{E}_{T} > 60$}
 \label{fig: mT1tauMet60}
 \end{figure}
 
