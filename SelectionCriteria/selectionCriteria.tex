@@ -52,11 +52,14 @@ The other variable analyzed using the figure of significance was the total mass 
 
 \section{Event Selection Criteria}\label{sec: selectionCriteria}
 
-In order to achieve a separation between background and signal, several successive requirements for the variables of the particles in the event were made. These requirements are defined as cuts, and for each cut the events that do not comply with the established condition are not taken into account to fill the histograms. Eight cuts were made to the histograms, storing in each cut the resulting distributions to analyze them later. The first four cuts were related with jets and $\tau$'s in the event, and the subsequent four were related with the VBF topology. In the next paragraphs of this section a description of each one of the cuts is given as well as the order in which they were performed. A summary of the selection criteria can be found in Table \ref{table: cuts}.
+In order to achieve a separation between background and signal, several successive requirements for the variables of the particles in the event were made. These requirements are defined as cuts, and for each cut the events that do not comply with the established condition are not taken into account to fill the histograms. Nine cuts were made to the histograms, storing in each cut the resulting distributions to analyze them later. The six cuts were related with jets and $\tau$'s in the event, and the subsequent three were related with the VBF topology. In the next paragraphs of this section a description of each one of the cuts is given as well as the order in which they were performed. A summary of the selection criteria can be found in Table \ref{table: cuts}.
 
-The first cuts that were made to the histograms were to require that the leading and sub-leading $\tau$'s should have a minimum transverse momentum of 20 GeV and a maximum of 2.1 for the absolute value of $\eta$. The latter guarantees that the $\tau$'s left are detected by the barrel and not the end-caps of the detector. That is an important condition because the detection components, such as the tracker, are in the barrel section and are more accurate than the ones in the end-caps. As a result, a signal detected in the barrel is most certain to be accurate than one detected in an end-cap.  
+The first cuts that were made to the histograms were to require that the leading and sub-leading $\tau$'s should have a minimum transverse momentum of 50 GeV and 20 GeV respectively and a maximum of 2.1 for the absolute value of $\eta$. The latter guarantees that the $\tau$'s left are detected by the barrel and not the end-caps of the detector. That is an important condition because the detection components, such as the tracker, are in the barrel section and are more accurate than the ones in the end-caps. As a result, a signal detected in the barrel is most certain to be accurate than one detected in an end-cap.  
 
-The next cut requires that the event does not have any B-jet. This cut is justified by the fact that one of the main backgrounds for the signal is the top anti-top ($t\bar{t}$) process. The interaction bewteen the top and anti-top quark is related with the production of jets associated with the $b$ quark or B-jets. That is why, much of the $t\bar{t}$ should be eliminated by requiring no B-jets in the event. This fact will be later analized further in chapter \ref{sec: disanalysis}. The cut that follows the one regarding the B-jets selects the events that have a minimum of two jets with transverse momentum greater than 30 GeV. This two jets must be different from the ones used in the Di-Jet Pair and are the ones that should result from the fragmentation of the quarks resulting of the W decay shown in Figure \ref{fig: HN_DY}.
+The next cut requires that the event does not have any B-jet. This cut is justified by the fact that one of the main backgrounds for the signal is the top anti-top ($t\bar{t}$) process. The interaction bewteen the top and anti-top quark is related with the production of jets associated with the $b$ quark or B-jets. That is why, much of the $t\bar{t}$ should be eliminated by requiring no B-jets in the event. This fact will be later analized further in chapter \ref{sec: disanalysis}. The cut that follows the one regarding the B-jets selects the events that have a minimum of two jets with transverse momentum greater than 40 GeV. This two jets must be different from the ones used in the Di-Jet Pair and are the ones that should result from the fragmentation of the quarks resulting of the W decay shown in Figure \ref{fig: HN_DY}.
+
+A selection criteria of requiring a combined mass of the two main taus in the event greater than 100 GeV was established. The case where there was only one leading tau in the event was analyzed so this selection criteria was not applied in that case. Also, it was required that the valid events had a missing transverse energy greater than 50 GeV.
+
 
 The last three cuts made to the histograms are related to the VBF topology. The first of the three selects events in which the product of $\eta$ from the leading and sub-leading jets is negative. This condition guarantees that the jets in the Di-Jet Pair are in opposite hemispheres. The next cut requires that the leading and sub-leading jets of the event have a $\Delta \eta$ greater than 3.8. Finally, the last cut requires that the Di-Jet mass of the event is greater than 500 GeV.
 
@@ -67,10 +70,13 @@ The last three cuts made to the histograms are related to the VBF topology. The 
 Variable & Criteria \\
 \hline
 $p_{T}(\tau_{1})$ & $> 50$ GeV \\
+$p_{T}(\tau_{2})$ & $> 20$ GeV \\
 $|\eta(\tau)|$ & $< 2.1$ \\ 
-$\slashed{E}_{T}$ & $> 30$ GeV \\
 Number of B-jets & $= 0$ \\
+$p_{T}(j)$ & $> 40$ GeV \\
 Number of jets & $ >= 2$ \\
+$m(\tau_{1}, \tau_{2})$ & $> 100$ GeV \\
+$\slashed{E}_{T}$ & $> 50$ GeV \\
 $\eta(j_{l}) \times \eta(j_{s})$ & $<0$ \\
 $\Delta \eta(jj)$ & $ > 3.8$ \\
 $m(jj)$ & $> 500$ GeV \\
